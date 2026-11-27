@@ -1,0 +1,32 @@
+:root {
+  --bleu-fonce: #1b3a57;
+  --icone: #5b4a7a;
+}
+
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+
+.bg-dark-blue   { background-color: var(--bleu-fonce) !important; }
+.text-dark-blue { color: var(--bleu-fonce); }
+
+.navbar .nav-link.active { background-color: #0d6efd; color: #fff; }
+
+.hero {
+  min-height: 320px;
+  background: linear-gradient(rgba(0,0,0,.15), rgba(0,0,0,.15)),
+              url("../images/paysage.jpg") center / cover no-repeat,
+              #2d5f8a;
+}
+.hero-box { background: rgba(13, 60, 110, .75); }
+
+.card-vert  { background-color: #e6f5ea; }
+.card-bleu  { background-color: #e0edff; }
+.card-jaune { background-color: #fff3d6; }
+
+.card-img-top {
+  height: 210px;
+  object-fit: cover;
+  background-color: #cfd8e3; 
+}
+
+
+.icone-atout { color: var(--icone); }

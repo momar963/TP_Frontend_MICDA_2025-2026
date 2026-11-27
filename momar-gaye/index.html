@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Découverte du Sénégal</title>
+
+  <!-- Bootstrap 5.3 (CSS) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Votre CSS personnalisé -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ========== 1. NAVBAR ========== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-3" href="#accueil">
+        <i class="bi bi-geo-alt-fill text-danger me-1"></i>Sénégal
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+              aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto gap-lg-1">
+          <li class="nav-item"><a class="nav-link active rounded" href="#accueil">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#decouvrir">Découvrir</a></li>
+          <li class="nav-item"><a class="nav-link" href="#lieux">Lieux touristiques</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galerie">Galerie</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <header id="accueil" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="hero-box text-white p-4 p-md-5 rounded-3 col-lg-8">
+        <h1 class="display-4 fw-bold">Découverte du Sénégal</h1>
+        <p class="lead mb-4">Un pays riche en culture, en paysages et en hospitalité.</p>
+        <a href="#lieux" class="btn btn-primary btn-lg">Explorer maintenant</a>
+      </div>
+    </div>
+  </header>
+
+ 
+  <main>
+    <section id="lieux" class="container-fluid py-3">
+      <div class="row g-3">
+
+        
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 border-0 card-vert">
+            <div class="card-body p-3">
+              <img src="images/dakar.jpg" class="card-img-top rounded mb-3" alt="Vue de Dakar">
+              <h2 class="card-title h4 fw-bold text-dark-blue">Dakar</h2>
+              <p class="card-text">La capitale du Sénégal, dynamique et moderne, offre un mélange unique de tradition et de modernité.</p>
+              <a href="#" class="btn btn-success">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 border-0 card-bleu">
+            <div class="card-body p-3">
+              <img src="images/lac-rose.jpg" class="card-img-top rounded mb-3" alt="Le Lac Rose">
+              <h2 class="card-title h4 fw-bold text-dark-blue">Le Lac Rose</h2>
+              <p class="card-text">Célèbre pour ses eaux aux teintes particulières, le Lac Rose est une merveille naturelle du Sénégal.</p>
+              <a href="#" class="btn btn-primary">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 border-0 card-jaune">
+            <div class="card-body p-3">
+              <img src="images/casamance.jpg" class="card-img-top rounded mb-3" alt="La Casamance">
+              <h2 class="card-title h4 fw-bold text-dark-blue">La Casamance</h2>
+              <p class="card-text">Une région verdoyante connue pour ses paysages, ses traditions et son accueil chaleureux.</p>
+              <a href="#" class="btn btn-warning">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    
+    <section id="decouvrir" class="bg-light py-5">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-md-4">
+            <i class="bi bi-camera-fill fs-1 icone-atout"></i>
+            <h3 class="h5 fw-bold mt-2 text-dark-blue">Des paysages uniques</h3>
+            <p class="text-secondary mb-0">Plages, lacs, forêts et savanes à couper le souffle.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="bi bi-people-fill fs-1 icone-atout"></i>
+            <h3 class="h5 fw-bold mt-2 text-dark-blue">Une culture riche</h3>
+            <p class="text-secondary mb-0">Traditions, musique, gastronomie et artisanat.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="bi bi-flower1 fs-1 icone-atout"></i>
+            <h3 class="h5 fw-bold mt-2 text-dark-blue">Un tourisme durable</h3>
+            <p class="text-secondary mb-0">Découvrir et préserver les richesses du Sénégal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+  <footer id="contact" class="bg-dark-blue text-white py-3">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <span>© 2026 Découverte du Sénégal. Tous droits réservés.</span>
+      <div class="d-flex gap-3">
+        <a href="#" class="text-white">Facebook</a>
+        <a href="#" class="text-white">Instagram</a>
+        <a href="#" class="text-white">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
